@@ -12,31 +12,54 @@
       margin: 0;
       padding: 0;
     }
+    nav {
+      background: #1f1f1f;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 1.1em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
     .container {
-      max-width: 800px;
-      margin: 60px auto;
+      max-width: 1000px;
+      margin: 40px auto;
       padding: 40px;
       background: #1e1e1e;
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-      text-align: center;
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+      flex-shrink: 0;
+    }
+    .bio {
+      flex: 1;
+      min-width: 300px;
     }
     h1 {
       margin-top: 0;
-      font-size: 2.6em;
-      color: #ffffff; /* keep name white on dark */
-    }
-    .profile-pic {
-      width: 220px;
-      height: 220px;
-      object-fit: cover;
-      border-radius: 50%;
-      margin: 25px auto;
-      display: block;
-      box-shadow: 0 4px 16px rgba(255, 255, 255, 0.15);
+      font-size: 2.4em;
+      color: #ffffff;
     }
     p {
-      font-size: 1.15em;
+      font-size: 1.1em;
       line-height: 1.7;
       color: #ccc;
     }
@@ -45,8 +68,8 @@
     }
     .links a {
       display: inline-block;
-      margin: 10px;
-      padding: 12px 22px;
+      margin: 8px 12px 0 0;
+      padding: 10px 18px;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 500;
@@ -77,24 +100,53 @@
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Serly Moghadas Gholian</h1>
-    <img src="serly.jpg" alt="Serly Moghadas" class="profile-pic">
-    
-    <p>
-      I’m a PhD researcher in Explainable AI for mobile traffic forecasting, currently based in Madrid, Spain.
-      My research focuses on exposing and addressing vulnerabilities in deep learning models used in mobile networks, using techniques like LRP and SHAP.
-    </p>
-    <p>
-      I’m passionate about building trustworthy and robust AI systems. I’ve presented my work at top-tier conferences including IEEE INFOCOM and TMC.
-      <strong>I’m currently open to new opportunities in AI/ML research, data science, or applied machine learning roles.</strong>
-    </p>
 
-    <div class="links">
-      <a href="cv.pdf" class="cv" download> Download CV</a>
-      <a href="https://scholar.google.com/citations?user=d9KKE0cAAAAJ&hl=en" target="_blank" class="scholar">🎓 Google Scholar</a>
-      <a href="https://www.linkedin.com/in/serly-gholian/" target="_blank" class="linkedin"> LinkedIn Profile</a>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#news">News</a>
+    <a href="#about">About Me</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container" id="about">
+    <img src="serly.jpg" alt="Serly Moghadas" class="profile-pic">
+    <div class="bio">
+      <h1>Serly Moghadas Gholian</h1>
+      <p>
+        I’m a PhD researcher in Explainable AI for mobile traffic forecasting, currently based in Madrid, Spain.
+        My research focuses on exposing and addressing vulnerabilities in deep learning models used in mobile networks,
+        using techniques like LRP and SHAP.
+      </p>
+      <p>
+        I’m passionate about building trustworthy and robust AI systems. I’ve presented my work at top-tier conferences including
+        IEEE INFOCOM and TMC.
+        <strong>I’m currently open to new opportunities in AI/ML research, data science, or applied machine learning roles.</strong>
+      </p>
+      <div class="links">
+        <a href="cv.pdf" class="cv" download>📄 Download CV</a>
+        <a href="https://scholar.google.com/citations?user=d9KKE0cAAAAJ&hl=en" target="_blank" class="scholar">🎓 Google Scholar</a>
+        <a href="https://www.linkedin.com/in/serly-gholian/" target="_blank" class="linkedin">💼 LinkedIn</a>
+      </div>
     </div>
   </div>
+
+  <!-- Placeholder Sections -->
+  <div class="container" id="news">
+    <div class="bio">
+      <h2>📰 News</h2>
+      <p>✨ Coming soon! </p>
+      <p>📌 May 2025 — Presenting my work on scalable DNNs at IEEE ICMLCN in Barcelona. </p>
+    </div>
+  </div>
+
+  <div class="container" id="contact">
+    <div class="bio">
+      <h2>📬 Contact</h2>
+      <p>Email: <serly.gholian(at)gmail.com</a></p>
+      <p>Based in Madrid.</p>
+    </div>
+  </div>
+
 </body>
 </html>
