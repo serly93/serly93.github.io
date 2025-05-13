@@ -1,67 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Serly Moghadas Gholian</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 40px;
-      background: #f7f7f7;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f9f9ff;
       color: #333;
+      margin: 0;
+      padding: 0;
     }
     .container {
-      max-width: 700px;
-      margin: auto;
-      background: white;
+      max-width: 800px;
+      margin: 60px auto;
       padding: 40px;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.05);
     }
     h1 {
       margin-top: 0;
-      color: #0077cc;
+      font-size: 2.4em;
+      color: #2255a4;
     }
-    a {
-      color: #0077cc;
+    p {
+      font-size: 1.1em;
+      line-height: 1.6;
+    }
+    .links {
+      margin-top: 30px;
+    }
+    .links a {
+      display: inline-block;
+      margin-right: 20px;
+      margin-top: 10px;
+      padding: 10px 20px;
+      border-radius: 6px;
       text-decoration: none;
+      font-weight: 500;
     }
-    a:hover {
-      text-decoration: underline;
-    }
-    .section {
-      margin-bottom: 30px;
-    }
-    .button {
-      background-color: #0077cc;
+    .cv {
+      background: #2255a4;
       color: white;
-      padding: 10px 15px;
-      border: none;
-      border-radius: 4px;
-      text-decoration: none;
     }
-    .button:hover {
-      background-color: #005fa3;
+    .cv:hover {
+      background: #193c79;
+    }
+    .scholar {
+      background: #eaeaea;
+      color: #333;
+    }
+    .scholar:hover {
+      background: #d8d8d8;
     }
   </style>
 </head>
 <body>
   <div class="container">
     <h1>Serly Moghadas Gholian</h1>
-    <p>PhD Researcher in Explainable AI for Mobile Networks</p>
+    <p>
+      I’m a PhD researcher in Explainable AI for mobile traffic forecasting, based in Madrid, Spain.
+      My work focuses on identifying vulnerabilities in deep learning models used by mobile network operators
+      and improving their interpretability through techniques like LRP and SHAP.
+    </p>
+    <p>
+      I’m passionate about creating robust, transparent AI tools that empower operators to understand and trust their systems.  
+      I’ve presented my work at top conferences such as IEEE INFOCOM and TMC.
+    </p>
 
-    <div class="section">
-      <h2>📄 Curriculum Vitae</h2>
-      <p>
-        <a href="Serly Moghadas Gholian_CV.pdf" class="button" download>Download my CV</a>
-      </p>
-    </div>
-
-    <div class="section">
-      <h2>📬 Contact</h2>
-      <p>Email: <a href="mailto:serly.moghadas@imdea.org">serly.moghadas@imdea.org</a></p>
+    <div class="links">
+      <a href="CV.pdf" class="cv" download>📄 Download CV</a>
+      <a href="https://scholar.google.com/citations?user=YOUR_ID_HERE" target="_blank" class="scholar">🎓 Google Scholar</a>
     </div>
   </div>
 </body>
