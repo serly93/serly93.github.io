@@ -4,8 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Serly Moghadas Gholian</title>
-  <script src="https://kit.fontawesome.com/6b60e8cd55.js" crossorigin="anonymous"></script>
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -14,6 +13,7 @@
       margin: 0;
       padding: 0;
     }
+
     nav {
       background: #1f1f1f;
       padding: 15px 30px;
@@ -23,14 +23,17 @@
       font-size: 1.1em;
       box-shadow: 0 2px 8px rgba(0,0,0,0.3);
     }
+
     nav a {
       color: #e0e0e0;
       text-decoration: none;
       font-weight: 500;
     }
+
     nav a:hover {
       text-decoration: underline;
     }
+
     .container {
       max-width: 1000px;
       margin: 40px auto;
@@ -39,74 +42,52 @@
       border-radius: 12px;
       box-shadow: 0 8px 24px rgba(0,0,0,0.3);
       display: flex;
-      gap: 40px;
       align-items: flex-start;
+      gap: 30px;
       flex-wrap: wrap;
     }
+
+    .left-side {
+      flex: 0 0 240px;
+      text-align: center;
+    }
+
     .profile-pic {
       width: 200px;
       height: 200px;
       object-fit: cover;
       border-radius: 50%;
       box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
-      flex-shrink: 0;
-      margin: 0 auto;
-      display: block;
+      margin-bottom: 20px;
     }
+
+    .icon-links a {
+      margin: 0 10px;
+      font-size: 1.5em;
+      color: #ccc;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .icon-links a:hover {
+      color: #1e90ff;
+    }
+
     .bio {
       flex: 1;
       min-width: 300px;
     }
+
     h1 {
       margin-top: 0;
       font-size: 2.4em;
       color: #ffffff;
     }
+
     p {
       font-size: 1.1em;
       line-height: 1.7;
       color: #ccc;
-    }
-    .links {
-      margin-top: 30px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 8px 12px 0 0;
-      padding: 10px 18px;
-      border-radius: 6px;
-      text-decoration: none;
-      font-weight: 500;
-      font-size: 1em;
-      transition: background 0.2s ease;
-    }
-    .github {
-      background: #3a3a3a;
-      color: white;
-    }
-    .github:hover {
-      background: #575757;
-    }
-    .cv {
-      background: #0077cc;
-      color: white;
-    }
-    .cv:hover {
-      background: #005fa3;
-    }
-    .scholar {
-      background: #3a3a3a;
-      color: white;
-    }
-    .scholar:hover {
-      background: #575757;
-    }
-    .linkedin {
-      background: #0077b5;
-      color: white;
-    }
-    .linkedin:hover {
-      background: #005582;
     }
   </style>
 </head>
@@ -123,26 +104,15 @@
 
   <!-- Main Content -->
   <div class="container" id="about">
-    <!-- Left column: Image + Links -->
-    <div style="flex-shrink: 0; text-align: center;">
+    <div class="left-side">
       <img src="serly.jpg" alt="Serly Moghadas" class="profile-pic">
-      <div class="links">
-        <a href="https://github.com/serly93" target="_blank" class="github">
-          <i class="fab fa-github"></i> Github
-        </a>
-        <a href="cv.pdf" class="cv" download>
-          <i class="fas fa-file-alt"></i> Download CV
-        </a>
-        <a href="https://scholar.google.com/citations?user=d9KKE0cAAAAJ&hl=en" target="_blank" class="scholar">
-          <i class="fas fa-graduation-cap"></i> Google Scholar
-        </a>
-        <a href="https://www.linkedin.com/in/serly-gholian/" target="_blank" class="linkedin">
-          <i class="fab fa-linkedin"></i> LinkedIn Profile
-        </a>
+      <div class="icon-links">
+        <a href="https://github.com/serly93" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="cv.pdf" download><i class="fas fa-file-alt"></i></a>
+        <a href="https://scholar.google.com/citations?user=d9KKE0cAAAAJ&hl=en" target="_blank"><i class="fas fa-graduation-cap"></i></a>
+        <a href="https://www.linkedin.com/in/serly-gholian/" target="_blank"><i class="fab fa-linkedin"></i></a>
       </div>
     </div>
-
-    <!-- Right column: Bio -->
     <div class="bio">
       <h1>Serly's Portfolio</h1>
       <p>
@@ -157,43 +127,6 @@
         <strong> 💼 I will be graduating soon and I’m currently looking for full-time positions in AI/ML research, data science,
         or applied machine learning roles. I'm open to both industry and research positions. </strong>
       </p>
-    </div>
-  </div>
-
-
-
-  <div class="container" id="news">
-    <div class="bio">
-      <h2>News</h2>
-      <p>📌 May 2025 — Presenting my work on scalable DNNs at <a href="https://icmlcn2025.ieee-icmlcn.org/" target="_blank">IEEE ICMLCN2025</a> in Barcelona. </p>
-    </div>
-  </div>
-  <div class="container" id="Publications">
-    <div class="bio">
-    <h2>Publications</h2>
-    <p>S. Moghadas Gholian, C. Fiandrino, and J. Widmer, “A scalable dnn training framework for traffic forecasting in mobile networks,” IEEE
-        International Conference on Machine Learning for Communication and Networking, IEEE ICMLCN 2025, Accepted for Publication.</p>
-    <p>S. Moghadas Gholian, C. Fiandrino, N. Vallina-Rodríguez, M. Fiore, and J. Widmer, “Deexp: Revealing model vulnerabilities for
-    spatio-temporal mobile traffic forecasting with explainable ai,” 6, IEEE Transactions on Mobile Computing, vol. 24, 2025, pp. 5245–5263. DOI: 10.1109/TMC.2025.3531544. </p>
-    <p>S. Moghadas, C. Fiandrino, A. Collet, G. Attanasio, M. Fiore, and J. Widmer, “Spotting deep neural network vulnerabilities in mobile
-    traffic forecasting with an explainable ai lens,” in IEEE INFOCOM 2023-IEEE Conference on Computer Communications, pp. 1–10. DOI:
-    10.1109/INFOCOM53939.2023.10228989. </p>
-    <p>S. Moghadas Gholian, C. Fiandrino, M. Fiore, and J. Widmer, “Exploiting explainable ai in exposing vulnerabilities of mobile 5g
-    networks,” in 13th IMDEA Networks Workshop: Quantum networks and quantum communications, 2023, pp. 1–1.</p>
-    </p>
-    </div>
-  <!-- </div>
-  <div class="container" id="Personal">
-    <div class="bio">
-    <h2>Personal</h2>
-    </div>
-  </div> -->
-  <div class="container" id="contact">
-    <div class="bio">
-      <h2>Contact</h2>
-      <p>Email: serly [dot] gholian [at] gmail [dot] com
-</p>
-      <p>Based in Madrid.</p>
     </div>
   </div>
 
