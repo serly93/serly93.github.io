@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Serly Moghadas Gholian</title>
+  <script src="https://kit.fontawesome.com/6b60e8cd55.js" crossorigin="anonymous"></script>
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #121212;
+      color: #e0e0e0;
+      margin: 0;
+      padding: 0;
+    }
+    nav {
+      background: #1f1f1f;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      font-size: 1.1em;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.3);
+    }
+    nav a {
+      color: #e0e0e0;
+      text-decoration: none;
+      font-weight: 500;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 40px;
+      background: #1e1e1e;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    .profile-pic {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 4px 16px rgba(255, 255, 255, 0.1);
+      flex-shrink: 0;
+    }
+    .bio {
+      flex: 1;
+      min-width: 300px;
+    }
+    h1 {
+      margin-top: 0;
+      font-size: 2.4em;
+      color: #ffffff;
+    }
+    p {
+      font-size: 1.1em;
+      line-height: 1.7;
+      color: #ccc;
+    }
+    .links {
+      margin-top: 30px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 8px 12px 0 0;
+      padding: 10px 18px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1em;
+      transition: background 0.2s ease;
+    }
+    .github {
+      background: #3a3a3a;
+      color: white;
+    }
+    .github:hover {
+      background: #575757;
+    }
+    .cv {
+      background: #0077cc;
+      color: white;
+    }
+    .cv:hover {
+      background: #005fa3;
+    }
+    .scholar {
+      background: #3a3a3a;
+      color: white;
+    }
+    .scholar:hover {
+      background: #575757;
+    }
+    .linkedin {
+      background: #0077b5;
+      color: white;
+    }
+    .linkedin:hover {
+      background: #005582;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#news">News</a>
+    <a href="#about">About Me</a>
+    <a href="#publications">Publications</a>
+    <a href="#personal">Personal</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <!-- Main Content -->
+  <div class="container" id="about">
+    <img src="serly.jpg" alt="Serly Moghadas" class="profile-pic">
+    <div class="bio">
+      <h1>Serly Moghadas Gholian</h1>
+      <p>
+        Hey there! Thanks for visiting my website!
+        I’m a PhD candidate in Explainable AI for mobile traffic forecasting, at IMDEA Networks Institute and University of Carlos III of Madrid, Spain.
+         My reasearch focuses on mobile networks, spatio-temporal traffic forecasting, and the application of Explainable AI (XAI) to improve the transparency and robustness of deep learning models in network management.
+        </p>
+      <p>
+        I’m passionate about building trustworthy and robust AI systems. I’ve presented my work at top-tier conferences including
+        IEEE INFOCOM and TMC.
+      <p>
+        <strong>I will be graduating soon and I’m currently looking for full-time positions in AI/ML research, data science,
+           or applied machine learning roles. I'm open to both industry and research positions. </strong>
+      </p>
+      <div class="links">
+        <a href="https://github.com/serly93" target="_blank" class="github"><i class="fab fa-github"></i>Github</a>
+        <a href="cv.pdf" class="cv" download><i class="fas fa-file-alt"></i>Download CV</a>
+        <a href="https://scholar.google.com/citations?user=d9KKE0cAAAAJ&hl=en" target="_blank" class="scholar"><i class="fas fa-graduation-cap"></i>Google Scholar</a>
+        <a href="https://www.linkedin.com/in/serly-gholian/" target="_blank" class="linkedin"><i class="fab fa-linkedin"></i>
+          LinkedIn Profile</a>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container" id="news">
+    <div class="bio">
+      <h2>News</h2>
+      <p>📌 May 2025 — Presenting my work on scalable DNNs at <a href="https://icmlcn2025.ieee-icmlcn.org/" target="_blank">IEEE ICMLCN2025</a> in Barcelona. </p>
+    </div>
+  </div>
+  <div class="container" id="Publications">
+    <div class="bio">
+    <h2>Publications</h2>
+    </div>
+  </div>
+  <div class="container" id="Personal">
+    <div class="bio">
+    <h2>Personal</h2>
+    </div>
+  </div>
+  <div class="container" id="contact">
+    <div class="bio">
+      <h2>Contact</h2>
+      <p>Email: serly [dot] gholian [at] gmail [dot] com
+</p>
+      <p>Based in Madrid.</p>
+    </div>
+  </div>
+
+</body>
+</html>
