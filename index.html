@@ -84,10 +84,25 @@
       color: #ffffff;
     }
 
+    h2 {
+      margin-top: 0;
+      font-size: 2em;
+      color: #ffffff;
+    }
+
     p {
       font-size: 1.1em;
       line-height: 1.7;
       color: #ccc;
+    }
+
+    ul {
+      padding-left: 20px;
+      color: #ccc;
+    }
+
+    li {
+      margin-bottom: 10px;
     }
   </style>
 </head>
@@ -102,7 +117,22 @@
     <a href="#contact">Contact</a>
   </nav>
 
-  <!-- Main Content -->
+  <!-- News Section -->
+  <div class="container" id="news">
+    <div class="bio">
+      <h2>📰 News</h2>
+      <ul>
+        <li>
+          I won the <strong>Best Student Paper Award</strong> at the IEEE ICMLCN 2025 in Barcelona.
+        </li>
+        <li>
+          I also won the <strong>3MT (Three-Minute Thesis)</strong> competition.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- About Me Section -->
   <div class="container" id="about">
     <div class="left-side">
       <img src="serly.jpg" alt="Serly Moghadas" class="profile-pic">
@@ -131,45 +161,39 @@
   </div>
 
   <!-- Publications Section -->
-<div class="container" id="publications">
-  <div class="bio">
-    <h2>📚 Publications</h2>
-  <ul>
-    <li>
-      <strong>S. Moghadas Gholian</strong>, C. Fiandrino, and J. Widmer, “A scalable dnn training framework for traffic forecasting in mobile networks,” IEEE
-      International Conference on Machine Learning for Communication and Networking, IEEE ICMLCN 2025, Barcelona, Spain, May 2025.
-      <a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1908/authors%27%20version.pdf?sequence=2&isAllowed=y" target="_blank">[PDF]</a>
-    </li>
-    </p>
-    <li>
-      <strong>S. Moghadas Gholian</strong>, C. Fiandrino, N. Vallina-Rodríguez, M. Fiore, and J. Widmer, “Deexp: Revealing model vulnerabilities for
-      spatio-temporal mobile traffic forecasting with explainable ai,” EEE Transactions on Mobile Computing, vol. 24, 2025, pp. 5245–5263.
-      <a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1889/2025_moghadas_tmc_deexp.pdf?sequence=1&isAllowed=y" target="_blank">[PDF]</a>
-    </li>
-    </p>
-    <li>
-      <strong>S. Moghadas</strong>, C. Fiandrino, A. Collet, G. Attanasio, M. Fiore, and J. Widmer, “Spotting deep neural network vulnerabilities in mobile
-      traffic forecasting with an explainable ai lens,” IEEE Conference on Computer Communications, IEEE INFOCOM 2023, New York, United States, May 2023.
-      <a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1662/Infocom2023_Claudio%20xai_aml-mtp-dspace.pdf?sequence=1&isAllowed=y" target="_blank">[PDF]</a>
-    </li>
-    </p>
-    <li>
-      <strong>S. Moghadas Gholian</strong> et al., “Exploiting Explainable AI in 5G,” IMDEA Workshop, Madrid, Spain, June 2023.
-      <a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1630/IMDEA-Scientific%20Poster-V-A1.pdf?sequence=1&isAllowed=y" target="_blank">[PDF]</a>
-    </li>
-  </ul>
-
+  <div class="container" id="publications">
+    <div class="bio">
+      <h2>📚 Publications</h2>
+      <ul>
+        <li>
+          <strong>S. Moghadas Gholian</strong>, C. Fiandrino, and J. Widmer, “A scalable dnn training framework for traffic forecasting in mobile networks,” IEEE
+          International Conference on Machine Learning for Communication and Networking, IEEE ICMLCN 2025, Barcelona, Spain, May 2025.
+          <a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1908/authors%27%20version.pdf?sequence=2&isAllowed=y" target="_blank">[PDF]</a>
+        </li>
+        <li>
+          <strong>S. Moghadas Gholian</strong>, C. Fiandrino, N. Vallina-Rodríguez, M. Fiore, and J. Widmer, “Deexp: Revealing model vulnerabilities for spatio-temporal mobile traffic forecasting with explainable ai,” IEEE Transactions on Mobile Computing, vol. 24, 2025, pp. 5245–5263.
+          <a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1889/2025_moghadas_tmc_deexp.pdf?sequence=1&isAllowed=y" target="_blank">[PDF]</a>
+        </li>
+        <li>
+          <strong>S. Moghadas</strong>, C. Fiandrino, A. Collet, G. Attanasio, M. Fiore, and J. Widmer, “Spotting deep neural network vulnerabilities in mobile traffic forecasting with an explainable ai lens,” IEEE Conference on Computer Communications, IEEE INFOCOM 2023, New York, United States, May 2023.
+          <a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1662/Infocom2023_Claudio%20xai_aml-mtp-dspace.pdf?sequence=1&isAllowed=y" target="_blank">[PDF]</a>
+        </li>
+        <li>
+          <strong>S. Moghadas Gholian</strong> et al., “Exploiting Explainable AI in 5G,” IMDEA Workshop, Madrid, Spain, June 2023.
+          <a href="https://dspace.networks.imdea.org/bitstream/handle/20.500.12761/1630/IMDEA-Scientific%20Poster-V-A1.pdf?sequence=1&isAllowed=y" target="_blank">[PDF]</a>
+        </li>
+      </ul>
+    </div>
   </div>
-</div>
 
-<!-- Contact Section -->
-<div class="container" id="contact">
-  <div class="bio">
-    <h2>📬 Contact</h2>
-    <p>Email: serly [dot] gholian [at] gmail [dot] com</p>
-    <p>Based in Madrid.</p>
+  <!-- Contact Section -->
+  <div class="container" id="contact">
+    <div class="bio">
+      <h2>📬 Contact</h2>
+      <p>Email: serly [dot] gholian [at] gmail [dot] com</p>
+      <p>Based in Madrid.</p>
+    </div>
   </div>
-</div>
 
 </body>
 </html>
